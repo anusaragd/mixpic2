@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<TextView android:id="@+id/tvTitle" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_margin="2dp"
+	    android:textSize="16sp" 
+	    android:text="hello"
+    />
+
+	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">    
+		<Button android:id="@+id/btn_open_bt" 
+			android:layout_width="310dp" 
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:text="Open" />
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">    
+		<Button android:id="@+id/btn_capture_raw" 
+			android:layout_width="150dp" 
+			android:layout_height="wrap_content" 
+			android:layout_margin="5dp"
+			android:text="Capture_Raw" />
+	
+		<Button
+		    android:id="@+id/btn_capture_wsq"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dp"
+		    android:text="Capture_Wsq" />
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    <Button android:id="@+id/btn_stop" 
+			android:layout_width="150dp" 
+			android:layout_height="wrap_content" 
+			android:layout_margin="5dp"
+			android:text="Stop" />
+	        	
+		<Button android:id="@+id/btn_save" 
+			android:layout_width="150dp" 
+			android:layout_height="wrap_content" 
+			android:layout_margin="5dp"
+			android:text="Save" />
+	</LinearLayout>
+	<TextView android:id="@+id/tvMessage" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="18sp"
+	    android:text="Message"
+	    />  
+	<ProgressBar 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:id="@+id/progressBar1" 
+		style="?android:attr/progressBarStyleHorizontal">
+	</ProgressBar>
+	<ImageView android:id="@+id/imageFinger"
+	    android:contentDescription="ImageDes"
+		android:src="@drawable/ic_launcher_background"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	/>
+    
+</LinearLayout>
